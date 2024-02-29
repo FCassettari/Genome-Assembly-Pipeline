@@ -7,9 +7,9 @@ def create_bowtie2_index(reference_fasta, index_prefix):
     os.system(command)
 
 def map_reads_to_hcmv(reads_fastq, hcmv_index_prefix, mapped_reads_fastq):
-    # Command to map reads to HCMV index
+    #map reads to the index
     command = f"bowtie2 -x {hcmv_index_prefix} -U {reads_fastq} -S {mapped_reads_fastq} --no-unal"
-    # Execute the command
+    #run the command
     os.system(command)
 
 def count_reads_fastq(fastq_file):
@@ -19,9 +19,9 @@ def count_reads_fastq(fastq_file):
     return count
 
 def run_spades(input_reads, output_dir):
-    # Command to run SPAdes
+    #the command
     command = f"spades.py  -s {input_reads[0]} -s {input_reads[1]} -s {input_reads[2]} -s {input_reads[3]} -o {output_dir} --phred-offset 33"
-    # Execute the command
+    #running the command
     os.system(command)
 
 ###############################################################################
