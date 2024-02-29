@@ -14,3 +14,5 @@ FASTQ file: Donor3_6dpi.fastq
 Number of reads before mapping: 2476889
 Number of reads after mapping: 326760
 
+SPAdes command:
+spades.py -s mapped_reads_Donor1_2dpi.fastq -s mapped_reads_Donor1_6dpi.fastq -s mapped_reads_Donor3_2dpi.fastq -s mapped_reads_Donor3_6dpi.fastq -o spades_output
