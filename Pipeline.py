@@ -29,7 +29,7 @@ def run_spades(input_reads, output_dir):
 #file path defs
 hcmv_genome_fasta = "NC_006273.2.fasta"
 hcmv_index_prefix = "hcmv_index"
-log_file = "bowtie2_mapping.log"
+log_file = "pipeline.log"
 
 #create index for hcmv
 create_bowtie2_index(hcmv_genome_fasta, hcmv_index_prefix)
